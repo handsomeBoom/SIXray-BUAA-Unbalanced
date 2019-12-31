@@ -32,11 +32,6 @@
 - 首先需要下载vgg16与与训练好的模型，可以从该链接下载：https://s3.amazonaws.com/amdegroot-models/vgg16_reducedfc.pth； 在weight文件夹内有与训练的vgg16模型。
 - 默认的模型保存在`weights/` 文件夹内。
 
-**核心训练参数**
-```python 
---dataset #使用的数据集
---dataset_root  #数据集的路径
-```
 
 ```Shell
 mkdir weights
@@ -56,11 +51,7 @@ python train.py --dataset_root path_to_datasets --epochs 50
 ```Shell
 python eval.py --trained_model path_to_model --six_root path_to_test_datasets 
 ```
-**模型评估重要的参数**
-```python
---six_root #数据集所在的根路径
---imagesetfile #测试集所在标记文件的路径
-```
+
 ## 模型测试
 将测试文件的测试结果生成相应的文件保存在`predicted_file`中
 ```Shell
