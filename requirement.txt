@@ -1,0 +1,7 @@
+# the requriment module for the project
+
+torch==1.0.1
+torchvision==0.2.2
+opencv-python
+pillow
+numpy==1.17.4
